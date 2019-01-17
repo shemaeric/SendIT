@@ -1,2 +1,2 @@
 # SendIT
-SendIT is the courier service.
+SendIT is the courier service
