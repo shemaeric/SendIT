@@ -47,6 +47,7 @@ ul{
 }
 
 .pull-right {
+	margin-top: 20px;
 	float: right; 
 }
 
@@ -57,6 +58,25 @@ ul{
 .text-center {
 	width: 700px;
 	margin: 10px 0 10px auto;
+}
+
+.info img{
+	width: 30px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 4px;
+}
+
+.count {
+	font-size: 25px;
+	margin-left: 10px;
+	background-color: #000;
+	border-radius: 6px;
+
+}
+
+.table-head {
+	text-align: center;
 }
 
 /*Header*/
@@ -159,18 +179,30 @@ header a:hover{
 	padding: 10px;
 }
 
+#boxes #tableBox {
+	text-align: center;
+	padding: 10px;
+}
+
 #boxes #box img {
 	width: 90px;
 }
 
 footer {
 	padding: 20px;
-	margin-top: 20px;
+	margin-top: 200px;
 	color: #ffffff;
 	background-color: #e8491d;
 	text-align: center;
 }
 
+.footer {
+	padding: 20px;
+	margin-top: 400px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
 /*Parcel Info*/
 /*Fieldset*/
 
@@ -183,7 +215,7 @@ fieldset{
 }
 
 legend {
-	background-color: #000;
+	background-color: #9a8d8d;
 	color: #ffffff;
 	padding: 3px 6px;
 }
@@ -229,4 +261,28 @@ legend {
     border: 1px solid transparent;
     border-radius: 4px;
     width: 10%;
+}
+
+/*Tables of activities*/
+#activity {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#activity td, #activity th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#activity tr:nth-child(even){background-color: #f2f2f2;}
+
+#activity tr:hover {background-color: #ddd;}
+
+#activity th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
 }
