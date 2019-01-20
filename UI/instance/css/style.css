@@ -19,13 +19,23 @@ ul{
 }
 
 .button_1 {
-	height: 38px;
-	background: orange;
+	background: #337ab7;
 	border: none;
-	padding-left: 20px;
-	padding-right: 20px;
 	color: #ffffff;
+	cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
 }
+
+.active {
+	background: #e0d8d8;
+	border: none;
+	color: #4c4545;
+	cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+}
+
 .pagi {
 	background-color: #337ab7;
 	color: #ffffff;
@@ -36,21 +46,17 @@ ul{
 
 }
 
-.first {
-	background-color: #ffffff;
-	color: black;
-	cursor: pointer;
-	font-size: 34px;
-    font-weight: 400;
-    border-radius: 4px;
-}
-
 .pull-right {
 	float: right; 
 }
 
 .hidden {
 	display: none;
+}
+
+.text-center {
+	width: 700px;
+	margin: 10px 0 10px auto;
 }
 
 /*Header*/
@@ -222,5 +228,5 @@ legend {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    width: 30%;
+    width: 10%;
 }
