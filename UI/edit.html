@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SendIT | Edit</title>
+	<link rel="stylesheet" type="text/css" href="instance/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>SendIT</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="neworder.html">Send Parcel</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="title">
+			<h1>Order#1</h1>
+		</div>
+		<div class="box">
+			<form>
+				<fieldset>
+					<legend>Destination</legend>
+					<fieldset>
+						<legend>Current Info</legend>
+						<div class="input">
+							<label>Country</label>
+							<input type="text" name="currentCountry" class="form-control">
+						</div>
+						<div class="input">
+							<label>City</label>
+							<input type="text" name="currentCity" class="form-control">
+						</div>
+						<div class="input">
+							<label>Adress</label>
+							<input type="text" name="currentAdress" class="form-control">
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>New Info</legend>
+						<div class="input">
+							<label>Country</label>
+							<select name="countryReciver" class="form-control">
+									<option value="" hidden=""></option>
+									<optgroup label="Africa">
+										<option value="Rwanda">Rwanda</option>
+										<option value="Uganda">Uganda</option>
+										<option value="Kenya">Kenya
+										<option value="Burundi">Burundi</option></option>
+									</optgroup>
+									<optgroup label="America">
+										<option value="USA">USA</option>
+										<option value="Canada">Canada</option>
+										<option value="Mexico">Mexico</option>
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="UK">UK</option>
+										<option value="Spain">Spain</option>
+										<option value="France">France</option>
+									</optgroup>
+								</select>
+						</div>
+						<div class="input">
+							<label>City</label>
+							<input type="text" name="currentCity" class="form-control">
+						</div>
+						<div class="input">
+							<label>Adress</label>
+							<input type="text" name="currentAdress" class="form-control">
+						</div>
+					</fieldset>
+					<button class="btn"> Change</button>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>SendIT Parcel delivery, Copyright &copy; 2018</p>
+	</footer>
+
+</body>
+</html>

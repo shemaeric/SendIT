@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SendIT | Activities</title>
+	<link rel="stylesheet" type="text/css" href="instance/css/style.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>SendIT</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="#">Send Parcel</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="main">
+		<div class="newOrder">
+			<form>
+				<fieldset>
+					<legend>New Order</legend>
+					<div id="inputOne">
+						<fieldset>
+							<legend>Parcel Details</legend>
+							<div class="input">
+								<label>Product</label>
+								<input type="text" name="product" class="form-control">
+							</div>
+							<div class="input">
+								<label>Weight(Kg)</label>
+								<input type="text" name="weight" class="form-control">
+							</div>
+							<div class="input">
+								<label>Quantity</label>
+								<input type="number" name="quantity" class="form-control">
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Destination</legend>
+							<div class="input">
+								<label>Country</label>
+								<select name="countryReciver" class="form-control">
+									<option value="" hidden=""></option>
+									<optgroup label="Africa">
+										<option value="Rwanda">Rwanda</option>
+										<option value="Uganda">Uganda</option>
+										<option value="Kenya">Kenya
+										<option value="Burundi">Burundi</option></option>
+									</optgroup>
+									<optgroup label="America">
+										<option value="USA">USA</option>
+										<option value="Canada">Canada</option>
+										<option value="Mexico">Mexico</option>
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="UK">UK</option>
+										<option value="Spain">Spain</option>
+										<option value="France">France</option>
+									</optgroup>
+								</select>
+							</div>
+							<div class="input">
+								<label>City</label>
+								<input type="text" name="city" class="form-control">
+							</div>
+							<div class="input">
+								<label>Adress</label>
+								<input type="text" name="adress" class="form-control">
+							</div>
+						</fieldset>
+					</div>
+					<div id="inputTwo" class="hidden">
+						<fieldset>
+							<legend>Receiver Informations</legend>
+							<div class="input">
+								<label>Name</label>
+								<input type="text" name="name" class="form-control">
+							</div>
+							<div class="input">
+								<label>Phone</label>
+								<input type="text" name="phone" class="form-control">
+							</div>
+							<div class="input">
+								<label>Name</label>
+								<input type="email" name="email" class="form-control">
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Confirm Your Location</legend>
+							<div class="input">
+								<label>Country</label>
+								<select name="countryReciver" class="form-control">
+									<option value="" hidden=""></option>
+									<optgroup label="Africa">
+										<option value="Rwanda">Rwanda</option>
+										<option value="Uganda">Uganda</option>
+										<option value="Kenya">Kenya
+										<option value="Burundi">Burundi</option></option>
+									</optgroup>
+									<optgroup label="America">
+										<option value="USA">USA</option>
+										<option value="Canada">Canada</option>
+										<option value="Mexico">Mexico</option>
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="UK">UK</option>
+										<option value="Spain">Spain</option>
+										<option value="France">France</option>
+									</optgroup>
+								</select>
+							</div>
+							<div class="input">
+								<label>City</label>
+								<input type="city" name="city" class="form-control">
+							</div>
+							<div class="Adress">
+								<label>Adress</label>
+								<input type="text" name="adressReciever" class="form-control">
+							</div>
+						</fieldset>
+					</div>
+					<div class="abm">
+						<a href="#" id="nextBtn" class="btn">Next</a>
+						<span class="pull-right">
+							<span id="first" class="active">1</span>
+							<span id="second" class="button_1">2</span>
+						</span>
+					</div>
+					<a href="#" id="prevBtn" class="hidden">Prev</a>
+					<div class="text-center">
+						<button id="submitBtn" class="hidden">
+							Create
+						</button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>SendIT Parcel delivery, Copyright &copy; 2018</p>
+	</footer>
+
+	<script>
+		let inputOne = document.getElementById('inputOne'),
+			inputTwo = document.getElementById('inputTwo'),
+			nextBtn = document.getElementById('nextBtn'),
+			prevBtn = document.getElementById('prevBtn'),
+			submitBtn = document.getElementById('submitBtn'),
+			first = document.getElementById('first'),
+			second = document.getElementById('second');
+
+		nextBtn.addEventListener('click', function() {
+			nextBtn.className = 'hidden';
+			first.className = 'button_1'
+			second.className = 'active';
+			inputOne.className = 'hidden';
+			inputTwo.className = '';
+			submitBtn.className ='btn';
+			prevBtn.className = 'btn';
+		});
+
+		prevBtn.addEventListener('click', function() {
+			nextBtn.className = 'btn';
+			first.className = 'active'
+			second.className = 'button_1';
+			inputOne.className = '';
+			inputTwo.className = 'hidden';
+			submitBtn.className ='hidden';
+			prevBtn.className = 'hidden';
+		});
+
+	</script>
+</body>
+</html>
