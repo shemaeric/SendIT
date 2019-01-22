@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SendIT | Admin</title>
+	<link rel="stylesheet" type="text/css" href="source/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>SendIT</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="neworder.html">Send Parcel</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="mydeliveries.html">MY DELIVERIES</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section >
+		<div class="title">
+			<h1>Order#1</h1>
+		</div>
+		<div class="box">
+			<form>
+				<fieldset>
+					<legend>Destination</legend>
+					<fieldset>
+						<legend>Current Info</legend>
+						<table id="activity">
+					<thead class="table-head">
+						<th colspan="2">Parcel Details</th>
+					</thead>
+					<tr>
+						<td>Product :</td>
+						<td>Eggs</td>
+					</tr>
+					<tr>
+						<td>Weight(Kg) :</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>Quantity :</td>
+						<td>400</td>
+					</tr>
+					<tr>
+						<td>Price :</td>
+						<td>$300</td>
+						</tr>
+					<tr>
+						<td>Pick Up Location: </td>
+						<td>Kigali Kacyiru st778</td>
+					</tr>
+					<tr>
+						<td>Destination :</td>
+						 <td>Rwanda Kigali City, Kigali-Gasabo</td>
+					</tr>
+					<tr>
+						<td>Present Location:</td>
+						 <td>Nigeria Abuja City</td>
+					</tr>
+					<tr>
+						<td>Status:</td>
+						<td>
+							<button class="button_1">In Transit</button>
+						</td>
+					</tr>
+				</table>
+					</fieldset>
+					<fieldset>
+						<legend>New Info</legend>
+						<div class="input">
+							<label>Status</label>
+							<select name="countryReciver" class="form-control">
+								<option>In Transit</option>
+								<option>Delived</option>
+							</select>
+						</div>
+						<div class="input">
+							<label>Present Location</label>
+							<input type="text" name="presentLocation" class="form-control">
+						</div>
+					</fieldset>
+					<button class="btn">Change</button>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
